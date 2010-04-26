@@ -48,6 +48,12 @@ You can set your own separator:
     You are here: <%= breadcrumbs.render(:format => :inline, :separator => '|') %>
   </p>
 
+=== Rails 3.0.0.beta3
+
+This gem has been tested and working fine with Rails 3.0.0.beta3 and Ruby 1.8.7-p249. 
+Just make sure that you use 'raw' method to display the breadcrumbs. For example:
+  <%= raw breadcrumbs.render(:format => :inline) %>
+
 === I18n
 
 Breadcrumbs is integrated with I18n. You can set translations like:
